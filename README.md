@@ -440,3 +440,22 @@ function printCalculatePredictions(predictionsVector, metricType) {
 
 Para ello, le pasamos como parámetro el vector de predicción y el tipo de métrica. Dependiendo del tipo de métrica, sabremos el tamaño de cada vector y donde estarán colocados los valores dado que en el caso de la métrica simple tenemos en cuenta los valores de usuario, ítem, resultado superior, resultado inferior y resultado final mientras que en el caso de la media, tenemos en cuenta los mismos más el de la media del usuario. Los valores de predicción serán redondeados.
 
+## 4. Ejemplo de uso
+
+Para realizar el ejemplo de uso debemos tener en cuenta que contamos con los siguientes parámetros que le pedimos al usuario:
+
+- Fichero a introducir
+- Tipo de métrica (Despliegue de opciones)
+- Vecinos considerados
+- Tipo de predicción (Despliegue de opciones)
+
+Motramos el siguiente ejemplo:
+
+<p align="center">
+ <a href="https://github.com/alu0101228020/RecommenderSystem/blob/main/docs/media/example.gif">
+  <img src="./docs/media/example.gif" style="max-width:100%; width: 150%">
+ </a>
+</p>
+
+
+
