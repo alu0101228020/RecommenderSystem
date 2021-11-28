@@ -6,13 +6,13 @@
 
 Ejecución del programa del sistema de recomendación: https://alu0101228020.github.io/RecommenderSystem/
 
-####1. Introducción
+#### 1. Introducción
 
 En este repositorio esta la práctica de Sistemas de recomendación que tiene como propósito realizar un sistema recomendador que implemente filtrado colaborativo basado en usuarios.
 
 Para desarrollar esta práctica he utilizado el lenguaje de **JavaScript**, **CSS* y **HTML**. También se ha utilizado el framework de **Materialize** para darle mejor estilo al código HTML.
 
-####2. Estructura de directorios
+#### 2. Estructura de directorios
 
 Dentro de la carpeta **docs** contamos con los siguientes directorios y ficheros:
 
@@ -24,22 +24,35 @@ Dentro de la carpeta **docs** contamos con los siguientes directorios y ficheros
 
 - style.css: Es la hoja de estilo style.css que define el estilo de presentación del documento HTML.
 
-####3. Descripción del código desarrollado
+#### 3. Descripción del código desarrollado
 
-####Clase Recommender (fichero recommender.js)
+#### Clase Recommender (fichero recommender.js)
 
 Esta clase corresponde a la clase del sistema de recomendador donde contamos con los siguientes atributos:
 
-- utilityMatrix: Corresponde a la matriz de utilidad del fichero introducido donde tenemos como fila los usuarios y como columnas las valoraciones numéricas y las valoraciones vacías representadas como '-'.
+```js
+    constructor(utilityMatrix, metricType, numberOfNeighbours, predictionType) {
+        this.utilityMatrix= utilityMatrix; // Matriz de utilidad
+        this.metricType = metricType; // Tipo de métrica
+        this.numberOfNeighbours = numberOfNeighbours; // Número de vecinos
+        this.predictionType = predictionType; // Tipo de predicción
+        this.similarityMatrix = []; // Matriz de similitud
+        this.closeNeighbours = []; // Vecinos más cercanos
+        this.calculatePredictions = []; // Cálculos de predicciones
+    }
+```
 
-- metricType: Corresponde a una cadena de texto con el tipo de métrica seleccionada que puede ser Pearson, Coseno y Euclidea.
+**- utilityMatrix:** Corresponde a la matriz de utilidad del fichero introducido donde tenemos como fila los usuarios y como columnas las valoraciones numéricas y las valoraciones vacías representadas como '-'.
 
-- numberOfNeighbours: Corresponde al número de vecinos más cercanos que se ha seleccionado que es de tipo numérico.
+**- metricType:** Corresponde a una cadena de texto con el tipo de métrica seleccionada que puede ser Pearson, Coseno y Euclidea.
 
-- predictionType: Corresponde a una cadena de texto con el tipo de predicción seleccionada que puede ser Simple o Media.
+**- numberOfNeighbours:** Corresponde al número de vecinos más cercanos que se ha seleccionado que es de tipo numérico.
 
-- similarityMatrix: Corresponde a la matriz de similitud que ha sido calculada y almacenada donde tenemos tanto en las filas como en las columnas los valores de similitud entre usuarios.
+**- predictionType:** Corresponde a una cadena de texto con el tipo de predicción seleccionada que puede ser Simple o Media.
 
-- closeNeighbours: Corresponde a una matriz con los valores de usuario, ítem de valoración y un vector con los vecinos cercanos a ese usuario. Esto nos servirá para imprimir los vecinos seleccionados en el proceso de predicción.
+**- similarityMatrix:** Corresponde a la matriz de similitud que ha sido calculada y almacenada donde tenemos tanto en las filas como en las columnas los valores de similitud entre usuarios.
 
-- calculatePredictions: Corresponde a una matriz con los cálculos de las predicciones con los valores de usuario, ítem de valoración, resultado superior de la ecuación de predicción, resultado inferior de la ecuación de la predicción, la media de usuario (solo en el caso de la ecuación de la predicción Media) y el resultado final de dicha predicción.
+**- closeNeighbours:** Corresponde a una matriz con los valores de usuario, ítem de valoración y un vector con los vecinos cercanos a ese usuario. Esto nos servirá para imprimir los vecinos seleccionados en el proceso de predicción.
+
+**- calculatePredictions:** Corresponde a una matriz con los cálculos de las predicciones con los valores de usuario, ítem de valoración, resultado superior de la ecuación de predicción, resultado inferior de la ecuación de la predicción, la media de usuario (solo en el caso de la ecuación de la predicción Media) y el resultado final de dicha predicción.
+
