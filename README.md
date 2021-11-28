@@ -230,16 +230,19 @@ En este método ealizamos la media de ítems del usuario pasado por parámetro a
 
 En este método realizamos el algoritmo de correlación de Pearson entre dos usuarios que se trata de un índice que se puede emplear para medir la relación entre dos variables cuantitativas y continuas. Para ello, se calculan las medias para ambos usuarios, después se recorre por ítems la matriz de utilidad comprobando que el ítem haya sido calificado por ambos usuarios, y se calcula la siguiente fórmula:
 
+![pearson](media/pearson.png)
 
 ### cosine(u,v)
 
 En este método realizamos el algoritmo de distancia Coseno entre dos usuarios que consiste en que si dos vectores tienen exactamente la misma orientación (el ángulo que forman es 0 grados) su coseno toma el valor de 1, si son perpendiculares (forman un ángulo de 90 grados) su coseno es 0 y si tienen orientaciones opuestas (ángulo de 180 grados) su coseno es de -1. Para ello, se recorre por ítems la matriz de utilidad comprobando que el ítem haya sido calificado por ambos usuarios, y se calcula la siguiente fórmula:
 
+![cosine](media/cosine.png)
 
 ### euclidean(u,v)
 
 En este método realizamos el algoritmo de distancia Euclídea entre dos usuarios que entre dos puntos p y q define la longitud del segmento que une ambos. Para ello, se recorre por ítems la matriz de utilidad comprobando que el ítem haya sido calificado por ambos usuarios, y se calcula la siguiente fórmula:
 
+![euclidean](media/euclidean.png)
 
 ### simplePrediction(u,i)
 
