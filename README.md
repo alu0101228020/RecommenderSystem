@@ -10,7 +10,7 @@ Ejecución del programa del sistema de recomendación: https://alu0101228020.git
 
 En este repositorio esta la práctica de Sistemas de recomendación que tiene como propósito realizar un sistema recomendador que implemente filtrado colaborativo basado en usuarios.
 
-Para desarrollar esta práctica he utilizado el lenguaje de **JavaScript**, **CSS* y **HTML**. También se ha utilizado el framework de **Materialize** para darle mejor estilo al código HTML.
+Para desarrollar esta práctica he utilizado el lenguaje de **JavaScript**, **CSS** y **HTML**. También se ha utilizado el framework de **Materialize** para darle mejor estilo al código HTML.
 
 ### 2. Estructura de directorios
 
