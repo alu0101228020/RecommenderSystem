@@ -4,7 +4,7 @@
 
 ### Autor: Dayana Armas Alonso (alu0101228020)
 
-Ejecución del programa del sistema de recomendación: https://alu0101228020.github.io/RecommenderSystem/
+                                Ejecución del programa del sistema de recomendación: https://alu0101228020.github.io/RecommenderSystem/
 
 ### 1. Introducción
 
