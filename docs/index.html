@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Práctica GCO: Sitemas de recomendación</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row card white">
+          <div class="col s12">
+            <h1 class="center">Práctica: Sistemas de recomendación</h1>
+          </div>
+          <div class="col s12 offset-s2">
+            <p class="title">Introduce los siguientes parámetros:</p>
+          </div>
+          <div class="col s8 offset-s2">
+            <form action="" id="form">
+              <div class="row">
+                <div class="col s12">
+                  <label for="matrix" class="black-text">Seleccione el archivo correspondiente de la matriz de utilidad que desea introducir</label>
+                  <input type="file" accept=".txt" id="matrix">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <label class="black-text">Tipo de métrica</label>
+                  <select class="browser-default" id="selectMetric">
+                    <option value="" disabled selected>Seleccionar métrica</option>
+                    <option value="Pearson">Correlación de Pearson</option>
+                    <option value="Coseno">Distancia Coseno</option>
+                    <option value="Euclidea">Distancia Euclídea</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <label for="neighbour" class="black-text">Vecinos considerados (Mínimo 3 vecinos)</label>
+                  <input type="number" class="validate" id="neighbour">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <label class="black-text">Tipo de predicción</label>
+                  <select class="browser-default" id="selectPrediction">
+                    <option value="" disabled selected>Seleccionar predicción</option>
+                    <option value="Simple">Predicción simple</option>
+                    <option value="Media">Diferencia con la media</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col s12 center">
+            <button type="button" class="btn waves-effect waves-light" name="action" id="button">Mostrar resultados</button>
+          </div>
+          <div id="utilityMatrix" class="col s12 center"></div>
+          <div id="similarityMatrix" class="col s12 center"></div>
+          <div id="resultMatrix" class="col s12 center"></div>
+          <div id="closeNeighbours" class="col s12"></div>
+          <div id="calculatePredictions" class="col s12"></div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="src/recommender.js"></script>
+    <script type="text/javascript" src="./src/form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

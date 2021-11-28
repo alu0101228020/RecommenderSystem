@@ -1,0 +1,44 @@
+body {
+  font-family: 'Times New Roman';
+  font-size: large;
+  background: #b2dfdb;
+}
+
+body label {
+  font-size: large !important;
+  font-weight: bold;
+}
+
+body button {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+#scrollTable {
+  overflow:scroll;
+  max-height: 600px;
+  max-width: 100%;
+  position:relative; 
+}
+
+body h5 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 2em;
+}
+
+body .title {
+  font-size: 25px;
+}
+
+body p {
+  font-size: 20px;
+}
+
+#neighbour, #selectMetric, #selectPrediction{
+  border-color: #b2dfdb;
+}
