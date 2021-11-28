@@ -20,13 +20,13 @@ Para desarrollar esta práctica he utilizado el lenguaje de **JavaScript**, **CS
 
 Dentro de la carpeta **docs** contamos con los siguientes directorios y ficheros:
 
-- examples: Es un directorio que incluye diferentes ejemplos de matrices de utilidad con las que se puede comprobar el correcto funcionamiento del programa.
+**- examples:** Es un directorio que incluye diferentes ejemplos de matrices de utilidad con las que se puede comprobar el correcto funcionamiento del programa.
 
-- src: Es un directorio que almacena el fichero **form.js** que permite mostrar el formulario donde el usuario debe introducir los datos para que luego se le muestre los resultados y el fichero **recommender.js** que define la clase Recommender que implementa el sistema de recomendación.
+**- src:** Es un directorio que almacena el fichero **form.js** que permite mostrar el formulario donde el usuario debe introducir los datos para que luego se le muestre los resultados y el fichero **recommender.js** que define la clase Recommender que implementa el sistema de recomendación.
 
-- index.html: Es el fichero en HTML que permite crear la página web.
+**- index.html:** Es el fichero en HTML que permite crear la página web.
 
-- style.css: Es la hoja de estilo style.css que define el estilo de presentación del documento HTML.
+**- style.css:** Es la hoja de estilo style.css que define el estilo de presentación del documento HTML.
 
 ### 3. Descripción del código desarrollado
 
